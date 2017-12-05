@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sections </title>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/javascript.js"></script>
+
+<style>
+body {
+  background-color: #f3f3f3;
+}
+
+.article-name{
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+.article-name h2, .article-name h3 {
+  color: #434343;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 5px 10px;
+  font-weight: normal;
+}
+
+#sections img{
+ margin-top: 70px;
+
+}
+
+#sections a{
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="app">
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <center><img src="img/avatar.png" alt="logo" class="logo-nav"></center>
+     <div class="menu">
+     <a href="index.html">Home</a>
+     <a href="preamble.html">Preamble</a>
+     <a href="articles.html">Articles</a>
+     <a href="about.html">About</a>
+     <a href="devs.html">Developers</a>
+   </div>
+     <p> 2017 1987 PhilCon</p>
+   </div>
+
+  <header class="header">
+    <div class="header-div">
+      <span>
+        <form>
+           <p onclick="openNav()" class="btnMenu">&#9776;</p>
+           <input type="text" placeholder="Search" class="search"/>
+       </form>
+     </span>
+     </div>
+   </header>
+
+   <div id="back">
+       <a href= "articles.html"> <img src="img/back.png"> </a>
+     </div>
+
+   <div class="article-name">
+   <center><h2>ARTICLE I</h2>
+   <h3>National Territory</h3></center>
+   </div>
+
+   <div id ="sections">
+     <div class="dropdown">
+<center><button onclick="myFunction(1)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
+  <div id="myDropdown1" class="dropdown-content">
+    <p>The national territory comprises the Philippine archipelago, with all the islands and waters embraced therein, and all other territories over which the Philippines has sovereignty or jurisdiction, consisting of its terrestrial, fluvial, and aerial domains, including its territorial sea, the seabed, the subsoil, the insular shelves, and other submarine areas. The waters around, between, and connecting the islands of the archipelago, regardless of their breadth and dimensions, form part of the internal waters of the Philippines.</p>
+  </div>
+</div>
+   </div>
+
+
+</body>
+
+</html>

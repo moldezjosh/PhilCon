@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sections </title>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/javascript.js"></script>
+
+<style>
+body {
+  background-color: #f3f3f3;
+}
+
+.article-name{
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+.article-name h2, .article-name h3 {
+  color: #434343;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 5px 10px;
+  font-weight: normal;
+}
+
+#sections img{
+ margin-top: 70px;
+
+}
+
+#sections a{
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="app">
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <center><img src="img/avatar.png" alt="logo" class="logo-nav"></center>
+     <div class="menu">
+     <a href="index.html">Home</a>
+     <a href="preamble.html">Preamble</a>
+     <a href="articles.html">Articles</a>
+     <a href="about.html">About</a>
+     <a href="devs.html">Developers</a>
+   </div>
+     <p> 2017 1987 PhilCon</p>
+   </div>
+
+  <header class="header">
+    <div class="header-div">
+      <span>
+        <form>
+           <p onclick="openNav()" class="btnMenu">&#9776;</p>
+           <input type="text" placeholder="Search" class="search"/>
+       </form>
+     </span>
+     </div>
+   </header>
+
+   <div id="back">
+       <a href= "articles.html"> <img src="img/back.png"> </a>
+     </div>
+
+   <div class="article-name">
+   <center><h2>ARTICLE IV</h2>
+   <h3>Citizenship</h3></center>
+   </div>
+
+   <div id ="sections">
+
+     <div class="dropdown">
+<center><button onclick="myFunction(1)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
+  <div id="myDropdown1" class="dropdown-content">
+    <p>The following are citizens of the Philippines:<br><br>
+        (1) Those who are citizens of the Philippines at the time of the adoption of this Constitution;<br><br>
+        (2) Those whose fathers or mothers are citizens of the Philippines;<br><br>
+        (3) Those born before January 17, 1973, of Filipino mothers, who elect Philippine citizenship upon reaching the age of majority; and<br><br>
+        (4) Those who are naturalized in accordance with law.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+<center><button onclick="myFunction(2)" class="dropbtn">Section 2<span>&#9660;</span></button></center>
+  <div id="myDropdown2" class="dropdown-content">
+    <p>Natural-born citizens are those who are citizens of the Philippines from birth without having to perform any act to acquire or perfect their Philippine citizenship. Those who elect Philippine citizenship in accordance with paragraph (3), Section 1 hereof shall be deemed natural-born citizens.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+<center><button onclick="myFunction(3)" class="dropbtn">Section 3<span>&#9660;</span></button></center>
+  <div id="myDropdown3" class="dropdown-content">
+    <p>Philippine citizenship may be lost or reacquired in the manner provided by law.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+<center><button onclick="myFunction(4)" class="dropbtn">Section 4<span>&#9660;</span></button></center>
+  <div id="myDropdown4" class="dropdown-content">
+    <p>Citizens of the Philippines who marry aliens shall retain their citizenship, unless by their act or omission they are deemed, under the law, to have renounced it.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+<center><button onclick="myFunction(5)" class="dropbtn">Section 5<span>&#9660;</span></button></center>
+  <div id="myDropdown5" class="dropdown-content">
+    <p>Dual allegiance of citizens is inimical to the national interest and shall be dealt with by law.</p>
+  </div>
+</div>
+
+
+   </div>
+</body>
+
+</html>
