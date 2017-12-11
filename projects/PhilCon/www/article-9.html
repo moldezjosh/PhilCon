@@ -10,42 +10,6 @@
 
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script type="text/javascript" src="js/javascript.js"></script>
-
-<style>
-body {
-  background-color: #f3f3f3;
-}
-
-.article-name{
-  width: 90%;
-  margin: 0 auto;
-  background-color: white;
-  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-}
-
-.article-name h2, .article-name h3 {
-  color: #434343;
-  font-family: "Times New Roman", Times, serif;
-  margin: 0px;
-  padding: 5px 10px;
-  font-weight: normal;
-}
-
-#sections img{
- margin-top: 70px;
-
-}
-
-#sections a{
-    text-decoration: none;
-}
-
-.subtitle {
-  text-align: center;
-    color: #434343;
-}
-
-</style>
 </head>
 
 <body>
@@ -54,136 +18,151 @@ body {
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
      <center><img src="img/avatar.png" alt="logo" class="logo-nav"></center>
      <div class="menu">
-     <a href="index.html">Home</a>
-     <a href="preamble.html">Preamble</a>
-     <a href="articles.html">Articles</a>
-     <a href="about.html">About</a>
-     <a href="devs.html">Developers</a>
+       <table>
+         <tr>
+           <td width="20%" class="icons"><img src="img/home-icon.png"></td>
+           <td width="90%"><a href="index.html">PhilCon</a></td>
+         </tr>
+         <tr>
+           <td class="icons"><img src="img/preamble-icon.png"></td>
+           <td><a href="preamble.html">Preamble</a></td>
+         </tr>
+         <tr>
+           <td class="icons"><img src="img/articles-icon.png"></td>
+           <td><a href="articles.html">Articles</a></td>
+         </tr>
+         <tr>
+           <td class="icons"><img src="img/about-icon.png"></td>
+           <td><a href="about.html">About</a></td>
+         </tr>
+         <tr>
+           <td class="icons"><img src="img/developers-icon.png"></td>
+           <td><a href="devs.html">Developers</a></td>
+         </tr>
+       </table>
    </div>
-     <p> 2017 1987 PhilCon</p>
+     <p>&#169; 2017 PhilCon</p>
    </div>
 
-  <header class="header">
-    <div class="header-div">
-      <span>
-        <form>
-           <p onclick="openNav()" class="btnMenu">&#9776;</p>
-           <input type="text" placeholder="Search" class="search"/>
-       </form>
-     </span>
-     </div>
-   </header>
 
-   <div id="back">
-       <a href= "articles.html"> <img src="img/back.png"> </a>
-     </div>
+      <header class="header">
+         <div class="header-div">
+             <center>
+                 <p onclick="openNav()" class="btnMenu">&#9776; Article IX</p>
+                     <span><a href="search.html" class="search"><img src="img/search-icon.png"></a></span>
+             </center>
+         </div>
+     </header>
+     <div class="wrapper">
+       <div class="back">
+           <p><a href= "articles.html">❮ Back</a></p>
+       </div>
 
-   <div class="article-name">
-   <center><h2>ARTICLE IX</h2>
-   <h3>Constitutional Commissions</h3></center>
-   </div>
+       <div class="article-name">
+         <center><h2>Constitutional Commissions</h2></center>
+       </div>
 
 
    <div id ="sections">
      <p class="subtitle">A. Common Provisions</p>
 
      <div class="dropdown">
-<center><button onclick="myFunction(1)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
-  <div id="myDropdown1" class="dropdown-content">
-    <p>The Constitutional Commissions, which shall be independent, are the Civil Service Commission, the Commission on Elections, and the Commission on Audit.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(2)" class="dropbtn">Section 2<span>&#9660;</span></button></center>
-  <div id="myDropdown2" class="dropdown-content">
-    <p>No Member of a Constitutional Commission shall, during his tenure, hold any other office or employment. Neither shall he engage in the practice of any profession or in the active management or control of any business which in any way be affected by the functions of his office, nor shall he be financially interested, directly or indirectly, in any contract with, or in any franchise or privilege granted by the Government, any of its subdivisions, agencies, or instrumentalities, including government-owned or controlled corporations or their subsidiaries.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(3)" class="dropbtn">Section 3<span>&#9660;</span></button></center>
-  <div id="myDropdown3" class="dropdown-content">
-    <p>The salary of the Chairman and the Commissioners shall be fixed by law and shall not be decreased during their tenure.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(4)" class="dropbtn">Section 4<span>&#9660;</span></button></center>
-  <div id="myDropdown4" class="dropdown-content">
-    <p>The Constitutional Commissions shall appoint their officials and employees in accordance with law.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(5)" class="dropbtn">Section 5<span>&#9660;</span></button></center>
-  <div id="myDropdown5" class="dropdown-content">
-    <p>The Commission shall enjoy fiscal autonomy. Their approved annual appropriations shall be automatically and regularly released.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(6)" class="dropbtn">Section 6<span>&#9660;</span></button></center>
-  <div id="myDropdown6" class="dropdown-content">
-    <p>Each Commission en banc may promulgate its own rules concerning pleadings and practice before it or before any of its offices. Such rules however shall not diminish, increase, or modify substantive rights.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(7)" class="dropbtn">Section 7<span>&#9660;</span></button></center>
-  <div id="myDropdown7" class="dropdown-content">
-    <p>Each Commission shall decide by a majority vote of all its Members any case or matter brought before it within sixty days from the date of its submission for decision or resolution. A case or matter is deemed submitted for decision or resolution upon the filing of the last pleading, brief, or memorandum required by the rules of the Commission or by the Commission itself. Unless otherwise provided by this Constitution or by law, any decision, order, or ruling of each Commission may be brought to the Supreme Court on certiorari by the aggrieved party within thirty days from receipt of a copy thereof.</p>
-  </div>
-</div>
-
-<div class="dropdown">
-<center><button onclick="myFunction(8)" class="dropbtn">Section 8<span>&#9660;</span></button></center>
-  <div id="myDropdown8" class="dropdown-content">
-    <p>Each Commission shall perform such other functions as may be provided by law.</p>
-  </div>
-</div>
-
-<p class="subtitle">B. The Civil Service Commission</p>
-
-  <div class="dropdown">
-      <center><button onclick="myFunction(9)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
-      <div id="myDropdown9" class="dropdown-content">
-      <p>(1) The Civil Service shall be administered by the Civil Service Commission composed of a Chairman and two Commissioners who shall be natural-born citizens of the Philippines and, at the time of their appointment, at least thirty-five years of age, with proven capacity for public administration, and must not have been candidates for any elective position in the elections immediately preceding their appointment.
-      <br><br>
-      (2) The Chairman and the Commissioners shall be appointed by the President with the consent of the Commission on Appointments for a term of seven years without reappointment. Of those first appointed, the Chairman shall hold office for seven years, a Commissioner for five years, and another Commissioner for three years, without reappointment. Appointment to any vacancy shall be only for the unexpired term of the predecessor. In no case shall any Member be appointed or designated in a temporary or acting capacity.</p>
+      <center><button onclick="myFunction(1)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
+        <div id="myDropdown1" class="dropdown-content">
+          <p>The Constitutional Commissions, which shall be independent, are the Civil Service Commission, the Commission on Elections, and the Commission on Audit.</p>
+        </div>
       </div>
-  </div>
 
-  <div class="dropdown">
-      <center><button onclick="myFunction(10)" class="dropbtn">Section 2<span>&#9660;</span></button></center>
-      <div id="myDropdown10" class="dropdown-content">
-      <p> (1) The civil service embraces all branches, subdivisions, instrumentalities, and agencies of the Government, including government-owned or controlled corporations with original charters.
-      <br><br>
-      (2) Appointments in the civil service shall be made only according to merit and fitness to be determined, as far as practicable, and, except to positions which are policy-determining, primarily confidential, or highly technical, by competitive examination.
-      <br><br>
-      (3) No officer or employee of the civil service shall be removed or suspended except for cause provided by law.
-      <br><br>
-      (4) No officer or employee in the civil service shall engage, directly or indirectly, in any electioneering or partisan political campaign.
-      <br><br>
-      (5) The right to self-organization shall not be denied to government employees.
-      <br><br>
-      (6) Temporary employees of the Government shall be given such protection as may be provided by law.</p>
+    <div class="dropdown">
+    <center><button onclick="myFunction(2)" class="dropbtn">Section 2<span>&#9660;</span></button></center>
+      <div id="myDropdown2" class="dropdown-content">
+        <p>No Member of a Constitutional Commission shall, during his tenure, hold any other office or employment. Neither shall he engage in the practice of any profession or in the active management or control of any business which in any way be affected by the functions of his office, nor shall he be financially interested, directly or indirectly, in any contract with, or in any franchise or privilege granted by the Government, any of its subdivisions, agencies, or instrumentalities, including government-owned or controlled corporations or their subsidiaries.</p>
       </div>
-  </div>
+    </div>
 
-  <div class="dropdown">
-      <center><button onclick="myFunction(11)" class="dropbtn">Section 3<span>&#9660;</span></button></center>
-      <div id="myDropdown11" class="dropdown-content">
-      <p>The Civil Service Commission, as the central personnel agency of the Government, shall establish a career service and adopt measures to promote morale, efficiency, integrity, responsiveness, progressiveness, and courtesy in the civil service. It shall strengthen the merit and rewards system, integrate all human resources development programs for all levels and ranks, and institutionalize a management climate conducive to public accountability. It shall submit to the President and the Congress an annual report on its personnel programs.</p>
+    <div class="dropdown">
+    <center><button onclick="myFunction(3)" class="dropbtn">Section 3<span>&#9660;</span></button></center>
+      <div id="myDropdown3" class="dropdown-content">
+        <p>The salary of the Chairman and the Commissioners shall be fixed by law and shall not be decreased during their tenure.</p>
       </div>
-  </div>
+    </div>
 
-  <div class="dropdown">
-      <center><button onclick="myFunction(12)" class="dropbtn">Section 4<span>&#9660;</span></button></center>
-      <div id="myDropdown12" class="dropdown-content">
-      <p>All public officers and employees shall take an oath or affirmation to uphold and defend this Constitution.</p>
+    <div class="dropdown">
+    <center><button onclick="myFunction(4)" class="dropbtn">Section 4<span>&#9660;</span></button></center>
+      <div id="myDropdown4" class="dropdown-content">
+        <p>The Constitutional Commissions shall appoint their officials and employees in accordance with law.</p>
       </div>
-  </div>
+    </div>
+
+    <div class="dropdown">
+    <center><button onclick="myFunction(5)" class="dropbtn">Section 5<span>&#9660;</span></button></center>
+      <div id="myDropdown5" class="dropdown-content">
+        <p>The Commission shall enjoy fiscal autonomy. Their approved annual appropriations shall be automatically and regularly released.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <center><button onclick="myFunction(6)" class="dropbtn">Section 6<span>&#9660;</span></button></center>
+      <div id="myDropdown6" class="dropdown-content">
+        <p>Each Commission en banc may promulgate its own rules concerning pleadings and practice before it or before any of its offices. Such rules however shall not diminish, increase, or modify substantive rights.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <center><button onclick="myFunction(7)" class="dropbtn">Section 7<span>&#9660;</span></button></center>
+      <div id="myDropdown7" class="dropdown-content">
+        <p>Each Commission shall decide by a majority vote of all its Members any case or matter brought before it within sixty days from the date of its submission for decision or resolution. A case or matter is deemed submitted for decision or resolution upon the filing of the last pleading, brief, or memorandum required by the rules of the Commission or by the Commission itself. Unless otherwise provided by this Constitution or by law, any decision, order, or ruling of each Commission may be brought to the Supreme Court on certiorari by the aggrieved party within thirty days from receipt of a copy thereof.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <center><button onclick="myFunction(8)" class="dropbtn">Section 8<span>&#9660;</span></button></center>
+      <div id="myDropdown8" class="dropdown-content">
+        <p>Each Commission shall perform such other functions as may be provided by law.</p>
+      </div>
+    </div>
+
+    <p class="subtitle">B. The Civil Service Commission</p>
+
+      <div class="dropdown">
+          <center><button onclick="myFunction(9)" class="dropbtn">Section 1<span>&#9660;</span></button></center>
+          <div id="myDropdown9" class="dropdown-content">
+          <p>(1) The Civil Service shall be administered by the Civil Service Commission composed of a Chairman and two Commissioners who shall be natural-born citizens of the Philippines and, at the time of their appointment, at least thirty-five years of age, with proven capacity for public administration, and must not have been candidates for any elective position in the elections immediately preceding their appointment.
+          <br><br>
+          (2) The Chairman and the Commissioners shall be appointed by the President with the consent of the Commission on Appointments for a term of seven years without reappointment. Of those first appointed, the Chairman shall hold office for seven years, a Commissioner for five years, and another Commissioner for three years, without reappointment. Appointment to any vacancy shall be only for the unexpired term of the predecessor. In no case shall any Member be appointed or designated in a temporary or acting capacity.</p>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <center><button onclick="myFunction(10)" class="dropbtn">Section 2<span>&#9660;</span></button></center>
+          <div id="myDropdown10" class="dropdown-content">
+          <p> (1) The civil service embraces all branches, subdivisions, instrumentalities, and agencies of the Government, including government-owned or controlled corporations with original charters.
+          <br><br>
+          (2) Appointments in the civil service shall be made only according to merit and fitness to be determined, as far as practicable, and, except to positions which are policy-determining, primarily confidential, or highly technical, by competitive examination.
+          <br><br>
+          (3) No officer or employee of the civil service shall be removed or suspended except for cause provided by law.
+          <br><br>
+          (4) No officer or employee in the civil service shall engage, directly or indirectly, in any electioneering or partisan political campaign.
+          <br><br>
+          (5) The right to self-organization shall not be denied to government employees.
+          <br><br>
+          (6) Temporary employees of the Government shall be given such protection as may be provided by law.</p>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <center><button onclick="myFunction(11)" class="dropbtn">Section 3<span>&#9660;</span></button></center>
+          <div id="myDropdown11" class="dropdown-content">
+          <p>The Civil Service Commission, as the central personnel agency of the Government, shall establish a career service and adopt measures to promote morale, efficiency, integrity, responsiveness, progressiveness, and courtesy in the civil service. It shall strengthen the merit and rewards system, integrate all human resources development programs for all levels and ranks, and institutionalize a management climate conducive to public accountability. It shall submit to the President and the Congress an annual report on its personnel programs.</p>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <center><button onclick="myFunction(12)" class="dropbtn">Section 4<span>&#9660;</span></button></center>
+          <div id="myDropdown12" class="dropdown-content">
+          <p>All public officers and employees shall take an oath or affirmation to uphold and defend this Constitution.</p>
+          </div>
+      </div>
 
   <div class="dropdown">
       <center><button onclick="myFunction(13)" class="dropbtn">Section 5<span>&#9660;</span></button></center>
@@ -355,8 +334,9 @@ body {
             <p>The Commission shall submit to the President and the Congress, within the time fixed by law, an annual report covering the financial condition and operation of the Government, its subdivisions, agencies, and instrumentalities, including government-owned or controlled corporations, and non-governmental entities subject to its audit, and recommend measures necessary to improve their effectiveness and efficiency. It shall submit such other reports as may be required by law.</p>
             </div>
         </div>
-
    </div>
+ </div>
+</div>
 </body>
 
 </html>

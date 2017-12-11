@@ -37,6 +37,7 @@
   color: #434343;
 }
 
+
     </style>
 
 </head>
@@ -47,32 +48,46 @@
        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
        <center><img src="img/avatar.png" alt="logo" class="logo-nav"></center>
        <div class="menu">
-       <a href="index.html">Home</a>
-       <a href="preamble.html">Preamble</a>
-       <a href="articles.html">Articles</a>
-       <a href="about.html">About</a>
-       <a href="devs.html">Developers</a>
+         <table>
+           <tr>
+             <td width="20%" class="icons"><img src="img/home-icon.png"></td>
+             <td width="90%"><a href="index.html">PhilCon</a></td>
+           </tr>
+           <tr>
+             <td class="icons"><img src="img/preamble-icon.png"></td>
+             <td><a href="preamble.html">Preamble</a></td>
+           </tr>
+           <tr>
+             <td class="icons"><img src="img/articles-icon.png"></td>
+             <td><a href="articles.html">Articles</a></td>
+           </tr>
+           <tr>
+             <td class="icons"><img src="img/about-icon.png"></td>
+             <td><a href="about.html">About</a></td>
+           </tr>
+           <tr>
+             <td class="icons"><img src="img/developers-icon.png"></td>
+             <td><a href="devs.html">Developers</a></td>
+           </tr>
+         </table>
      </div>
-       <p> 2017 1987 PhilCon</p>
+       <p>&#169; 2017 PhilCon</p>
      </div>
 
-
- <header class="header">
-   <div class="header-div">
-     <span>
-       <form>
-          <p onclick="openNav()" class="btnMenu">&#9776;</p>
-          <input type="text" placeholder="Search" class="search"/>
-      </form>
-    </span>
-    </div>
-  </header>
+     <header class="header">
+       <div class="header-div">
+           <center>
+               <p onclick="openNav()" class="btnMenu">&#9776; About</p>
+               <span><a href="search.html" class="search"><img src="img/search-icon.png"></a></span>
+        </center>
+        </div>
+      </header>
 
 </div>
-
+<div class="wrapper">
 <div id= "about">
 
-<h5>About 1987 PhilCon</h5>
+<h5>About PhilCon</h5>
 
 <p> 1987 PhilCon is an offiline reference for the 1987 Contitution, The Constitution of the Republic of the Philippines. It contains all the articles (18 Articles) of the 1987 Constitution.</p>
 
@@ -83,15 +98,9 @@
 
 <div id = "copyright">
 
-<center><p> &#169; 2017 1987 PhilCon </p></center>
-
+<center><p> &#169; 2017 PhilCon </p></center>
 </div>
-
-
-
-
-
-
+</div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

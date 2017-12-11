@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/javascript.js"></script>
+    <title>1987 PhilCon v.1</title>
+
+    <style>
+
+    body {
+      background-color: white;
+    }
+      .header-div span {
+        color: white;
+      }
+      .header-div {
+        margin-left: 5%;
+      }
+      .search {
+        width: 70%;
+      }
+
+
+      * {
+        box-sizing: border-box;
+      }
+
+      #myInput {
+
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 80%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+      }
+
+      #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: white;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        display: block
+      }
+
+      #myUL li a:hover:not(.header) {
+        background-color: #eee;
+      }
+
+      .closebtn {
+        color: white;
+        text-decoration: none;
+      }
+
+      .searchBox {
+          border: 1px solid white;
+          border-radius: 8px;
+      }
+      .wrapper {
+        background-color: white;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="app">
+     <header class="header">
+       <div class="header-div">
+         <span>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search article..." class="searchBox" autocomplete="off"/>
+                <span><a href="javascript:void(0)" class="closebtn" onclick="goBack()">Cancel</a></span>
+        </span>
+        </div>
+      </header>
+      <div class="wrapper">
+      <div id="myartList" class="artList">
+      <ul id="myUL" >
+        <li><a href="article-1.html">Article 1 - National Territory</a></li>
+        <li><a href="article-2.html">Article 2 - Declaration of Principles and State Policies</a></li>
+        <li><a href="article-3.html">Article 3 - Bill of Rights</a></li>
+        <li><a href="article-4.html">Article 4 - Citizenship</a></li>
+        <li><a href="article-5.html">Article 5 - Suffrage</a></li>
+        <li><a href="article-6.html">Article 6 - The Legislative Department</a></li>
+        <li><a href="article-7.html">Article 7 - Executive Department</a></li>
+        <li><a href="article-8.html">Article 8 - Judicial Department</a></li>
+        <li><a href="article-9.html">Article 9 - Constitutional Commissions</a></li>
+        <li><a href="article-10.html">Article 10 - Local Government</a></li>
+        <li><a href="article-11.html">Article 11- Accountability of Public Officers</a></li>
+        <li><a href="article-12.html">Article 12 - National Economy and Patrimony</a></li>
+        <li><a href="article-13.html">Article 13 - Social Justice and Human Rights</a></li>
+        <li><a href="article-14.html">Article 14 - Education, Science and Technology, Arts, Culture, and Sports</a></li>
+        <li><a href="article-15.html">Article 15 - The Family</a></li>
+        <li><a href="article-16.html">Article 16 - General Provisions</a></li>
+        <li><a href="article-17.html">Article 17 - Amendments or Revisions</a></li>
+        <li><a href="article-18.html">Article 18 - Transitory Provisions</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+
+
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+
+            }
+        }
+    }
+
+
+    function goBack() {
+        window.history.back();
+    }
+
+
+    </script>
+</body>
+
+</html>
